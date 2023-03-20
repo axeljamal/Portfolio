@@ -20,7 +20,7 @@
   * [Tests](#tests)
   * [Questions](#questions)
   
-  ## [Live site](axelanggara.netlify.app)
+  ## [Live site](https://axelanggara.netlify.app/)
   
   ## Screenshot
   

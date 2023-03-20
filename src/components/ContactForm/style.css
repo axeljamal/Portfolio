@@ -1,0 +1,143 @@
+.contactContainer {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  margin-top: 50px;
+  font-family: "Quicksand";
+  display: flex;
+  align-items: center;
+  margin: 0 5rem;
+  flex-direction: column;
+}
+
+.formContainer {
+  padding-left: 0;
+  width: 50%;
+}
+
+form {
+  font-family: "Quicksand";
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  padding-top: 2rem;
+}
+
+input,
+textarea {
+  padding-left: 10px;
+  background-color: var(--light);
+  border: none;
+  border-bottom: solid 2px var(--dark);
+}
+
+textarea {
+  height: 150px;
+  border-bottom: 2px solid var(--dark);
+  box-sizing: border-box;
+  resize: none;
+}
+
+input {
+  height: 25px;
+}
+
+.contactEnd {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.contactMe {
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactMe:hover {
+  color: var(--bright);
+  outline: 0;
+}
+
+.submit-btn {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+}
+
+.email {
+  margin-left: 10px;
+  font-family: "Quicksand";
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.success {
+  text-align: center;
+  font-family: "Quicksand";
+  color: var(--bright);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+  .contactContainer {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .formContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .submit-btn {
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactEnd {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+    font-family: "Quicksand";
+  }
+
+  .contactEnd h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand";
+  }
+
+  .contactMe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactLeft,
+  .contactEnd {
+    padding-bottom: 3rem;
+  }
+  input {
+    height: 25px;
+  }
+}

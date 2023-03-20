@@ -1,0 +1,33 @@
+.footer {
+  min-height: 100px;
+  background: var(--brighter);
+  position: relative;
+}
+
+.footer span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  background: var(--light);
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  margin-top: 1rem;
+  color: var(--dark);
+  font-size: 40px;
+  margin-right: 2rem;
+}
+.social .icons:hover {
+  color: var(--light);
+}

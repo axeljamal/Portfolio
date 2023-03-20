@@ -1,0 +1,90 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--bright);
+}
+
+.about h1 {
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.about p {
+  text-align: start;
+  text-indent: 2%;
+  font-family: "Quicksand";
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--dark);
+  margin-bottom: 30px;
+}
+
+.about .right {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.about .left {
+  width: 70vh;
+  height: 65vh;
+}
+
+.about .img-container {
+  margin-top: 7vh;
+  position: relative;
+  width: 100%;
+}
+
+.about .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 0;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  color: var(--bright);
+}
+
+@media screen and (max-width: 1040px) {
+  .about {
+    flex-direction: column;
+    margin: 0 3px;
+  }
+
+  .right {
+    order: 2;
+    padding: 0px;
+  }
+
+  .about .left {
+    width: 100%;
+  }
+
+  .left {
+    order: 1;
+  }
+
+  .about .img-container {
+    top: 5vh;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+  }
+}

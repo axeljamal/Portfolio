@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Rampart+One&display=swap");
+
+:root {
+  --dark: rgb(21, 3, 27);
+  --light: #fffef3;
+  --brighter: rgb(255, 197, 6);
+  --bright: rgb(233, 109, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rampart One", "Quicksand", sans-serif, cursive;
+}
+
+body {
+  background: var(--light);
+}
+
+h1,
+h4,
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dotted-line {
+  background-color: #e8e7e3;
+  border-top: 10px dotted white;
+}
+
+.dotted-line-dark {
+  background-color: transparent;
+  border-top: 10px dotted white;
+  margin-top: -5px;
+}
+
+.workContainer {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10vh;
+  padding: 10px;
+}
+
+NavPanel {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 13px 50px 13px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .workContainer {
+    grid-template-columns: 1fr;
+  }
+  NavPanel {
+    display: initial;
+  }
+  Header {
+    display: hidden;
+  }
+}

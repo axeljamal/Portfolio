@@ -20,7 +20,7 @@
   * [Tests](#tests)
   * [Questions](#questions)
   
-  ## [Live site](https://axeljamal.github.io/react-js-portfolio)
+  ## [Live site](axelanggara.netlify.app)
   
   ## Screenshot
   

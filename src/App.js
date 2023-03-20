@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/react-js-portfolio">
+      <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

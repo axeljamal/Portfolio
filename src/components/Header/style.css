@@ -45,7 +45,6 @@
 
 .li {
   display: flex;
-  align-items: end;
   top: 30px;
 }
 
@@ -121,16 +120,13 @@
     position: absolute;
     top: 30px;
     right: 30px;
-
     display: flex;
-    justify-content: end;
   }
 
   .ex {
     position: absolute;
     right: 30px;
     display: flex;
-    justify-content: end;
   }
   .logo-container {
     position: fixed;
